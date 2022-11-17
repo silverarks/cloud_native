@@ -44,6 +44,29 @@ restart인경우는 재시작을 할때 쓰는 방법이다.
 컨테이너가 켜진 후 컨테이너안의 db로 접속하는 방법이다.
 접속을하면 콘솔화면에서 드디어 쿼리 커맨드로 db에 접속가능하다.
 
+```
+CREATE database mydatabase;
+SHOW database;
+CREATE TABLE `mydatabase`.`client` (
+  `client_id` CHAR(10) NOT NULL,
+  `client_phonenum` CHAR(10) NOT NULL);
+```
+
+현재 데이터베이스에 아무런 파일이 없기때문에 db를 생성하고 db가 생성되엇는지 확인 후 db안에 하나의 테이블을 생성해보는 코드이다.
+
+```
+INSERT INTO client(client_id,client_phonenum)VALUES('고객','01000000000');
+SELECT*FROM mydatabase.client;
+```
+
+이제 테이블이 생성되고 그 안에 데이터들을 넣고 확인해보는 코드이다.
+
+```
+DELETE FROM client;
+SEECT *FROM mydatabase.client;
+```
+
+테이블 생성이 확인까지 완료후에 데이터들이 삭제가 되는지 확인해보는 코드이다.
 
 
 
