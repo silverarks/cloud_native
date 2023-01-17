@@ -47,9 +47,9 @@ restart인경우는 재시작을 할때 쓰는 방법이다.
 ```
 CREATE database mydatabase;
 SHOW database;
-CREATE TABLE `mydatabase`.`client` (
-  `client_id` CHAR(10) NOT NULL,
-  `client_phonenum` CHAR(10) NOT NULL);
+CREATE TABLE mydatabase.client (
+  client_id CHAR(10) NOT NULL,
+  client_phonenum CHAR(10) NOT NULL);
 ```
 
 현재 데이터베이스에 아무런 파일이 없기때문에 db를 생성하고 db가 생성되엇는지 확인 후 db안에 하나의 테이블을 생성해보는 코드입니다.
