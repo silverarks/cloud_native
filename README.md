@@ -9,7 +9,7 @@
 docker-compose up -d
 ```
 
-해당 명령어를 터미널을 통해 실행시키면 docker-compose파일에서 지정된 mysql image가 다운로드 되고 db가 열리는 것을 알 수 있습니다.
+해당 명령어를 .yml파일이 들어있는 곳에서 커맨드로 실행시키면 docker-compose파일에서 지정된 mysql image가 다운로드 되고 db가 열리는 것을 알 수 있습니다.
 image가 정상적으로 다운됫는 지 확인하는 방법은 아래의 명령어를 실행해보면 알 수 있습니다.
 
 ```
