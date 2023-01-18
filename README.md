@@ -50,11 +50,10 @@ docker info| grep Username
  docker restart [컨테이너이름]
 ```
 
-사용하고 싶은 컨테이너이름을 입력하여 자신이 쓰고싶은 컨테이너를 지정합니다. 저의 경우 docker start mysql을 통하여 컨테이너를 지정해줍니다.
-혹시 디버깅에러가 난다면 포트가 열려있는 지 확인해보고 포트를 열고 다시한번 실행한다.
-docker stop은 내가 컨테이너를 끄고 싶을 때 컨테이너를 종료하는 방법이다. 사용후 doker ps를 통해 꺼졋는지 확인해본다.
+사용하고 싶은 컨테이너이름을 입력하여 자신이 쓰고싶은 컨테이너를 지정합니다.
+제가 사용한 docker compose 파일의 경우 restart:always가 되어 있기때문에 가동중인 상태이기때문에 이러한 명령어가 있다는 것만 짚고 넘어가겠습니다.
+docker stop은 내가 컨테이너를 끄고 싶을 때 컨테이너를 종료하는 방법입니다. 사용후 doker ps를 통해 꺼졋는지 확인해봅니다.
 restart인경우는 재시작을 할때 쓰는 방법입니다.
-하지만 우리가 쓰는 docker compose.yml은 restart가 항상 always된 상태이기 때문에 컨테이너를 start하는 것에 대해
 
 ```
   docker exec -it [컨테이너이름] bash
