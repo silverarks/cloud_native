@@ -70,7 +70,7 @@ mysql -u root -p
 
 ```
 CREATE database mydatabase;
-SHOW database;
+SHOW mydatabase;
 CREATE TABLE `mydatabase`.`client` (
   `client_id` CHAR(10) NOT NULL,
   `client_phonenum` CHAR(10) NOT NULL);
