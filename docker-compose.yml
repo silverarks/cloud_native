@@ -5,15 +5,14 @@ services:
     image: mysql:latest #latest는 가장 최신버전
     ports: #사용할 포트
       - 3307:3306
-    restart: always #도커실행 시 도커가 재시작함. 갑작스럽게 종료되었어도, 재시작할 수 있는 옵션이다.
+    restart: always
     volumes: #경로설정
       - D:/mysql/data:/var/lib/mysql
     environment:
-      MYSQL_HOST: mysql
       MYSQL_DB: mydb
       MYSQL_ROOT_PASSWORD: 1234
     command:
        - --character-set-server=utf8mb4
-        #UTF-8인코딩
+ 
   
     
